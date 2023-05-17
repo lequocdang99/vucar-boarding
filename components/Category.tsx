@@ -32,6 +32,7 @@ export default async function Category({ category }: { category: string }) {
       <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-10 h-fit'>
         {data.slice(0, 3).map((item: News) => (
           <Card
+            category={cat}
             item={item}
             key={item.url}
           />
