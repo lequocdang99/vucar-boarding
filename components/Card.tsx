@@ -37,7 +37,7 @@ export default function Card({
       className='grid grid-rows-2 border-x border-b rounded-lg hover:scale-105 transition ease-in-out duration-300 cursor-pointer'
     >
       <Link
-        href={{ pathname: '/[category]/[news]', query: 'Something' }}
+        href='/[category]/[news]'
         as={`/${category}/${slugify(item.title)}`}
       >
         <Image
@@ -50,7 +50,7 @@ export default function Card({
       </Link>
       <div className='p-3'>
         <Title
-          url={item.readMoreUrl}
+          category={category}
           title={item.title}
         />
         <Author author={item.author} />

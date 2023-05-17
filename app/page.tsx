@@ -6,10 +6,6 @@ import MainArticle from '@/components/MainArticle';
 import SideArticle from '@/components/SideArticle';
 import Category from '@/components/Category';
 import MainTitle from '@/components/MainTitle';
-import LoadingMainTitle from '@/components/Loading/LoadingMainTitle';
-import LoadingNavBar from '@/components/Loading/LoadingNavBar';
-import LoadingMainArticle from '@/components/Loading/LoadingMainArticle';
-import LoadingSideArticle from '@/components/Loading/LoadingSideArticle';
 
 export async function getNews(category: string) {
   const res = await fetch(
@@ -28,18 +24,24 @@ export default async function Main() {
       <div className='mx-10'>
         <MainTitle title='Bài Viết Nổi Bật' />
         <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-5 p-5 bg-slate-100 rounded-lg'>
-          <MainArticle data={randomArticle} />
+          <MainArticle
+            category={category}
+            data={randomArticle}
+          />
           <div className='grid grid-cols-1 gap-5'>
             <Head title='Bài Viết Mới Nhất' />
             <SideArticle
+              category={category}
               data={data[1]}
               key={data[1].url}
             />
             <SideArticle
+              category={category}
               data={data[2]}
               key={data[2].url}
             />
             <SideArticle
+              category={category}
               data={data[4]}
               key={data[4].url}
             />

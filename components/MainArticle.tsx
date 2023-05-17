@@ -4,6 +4,7 @@ import Title from './Title';
 import Image from 'next/image';
 import Content from './Content';
 import Link from 'next/link';
+import { slugify } from './Card';
 
 interface News {
   author: string;
@@ -16,10 +17,19 @@ interface News {
   url: string;
 }
 
-export default function MainArticle({ data }: { data: News }) {
+export default function MainArticle({
+  category,
+  data,
+}: {
+  category: string;
+  data: News;
+}) {
   return (
     <div className='flex flex-col w-100'>
-      <Link href={data.readMoreUrl}>
+      <Link
+        href='/[category]/[news]'
+        as={`/${category}/${slugify(data.title)}`}
+      >
         <Image
           src={data.imageUrl}
           alt={data.title}
@@ -31,7 +41,7 @@ export default function MainArticle({ data }: { data: News }) {
       <div className='p-3 leading-loose'>
         <Title
           title={data.title}
-          url={data.readMoreUrl}
+          category={category}
         />
         <Content content={data.content} />
         <Author author={data.author} />

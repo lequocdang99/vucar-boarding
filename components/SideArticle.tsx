@@ -14,7 +14,13 @@ interface News {
   url: string;
 }
 
-export default function SideArticle({ data }: { data: News }) {
+export default function SideArticle({
+  category,
+  data,
+}: {
+  category: string;
+  data: News;
+}) {
   return (
     <div className='grid grid-cols-2 gap-5'>
       <Image
@@ -27,7 +33,7 @@ export default function SideArticle({ data }: { data: News }) {
       <div className=''>
         <Title
           title={data.title}
-          url={data.readMoreUrl}
+          category={category}
         />
         <Author author={data.author} />
       </div>
