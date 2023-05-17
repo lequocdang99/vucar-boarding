@@ -15,6 +15,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+}
 
 body {
   color: rgb(var(--foreground-rgb));
