@@ -1,5 +1,5 @@
-import LoadingContent from './LoadingContent';
 import LoadingTitle from './LoadingTitle';
+import LoadingContent from './LoadingContent';
 
 export default function LoadingFooter() {
   return (

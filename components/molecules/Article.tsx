@@ -32,6 +32,7 @@ export default function Article({ data }: { data: News }) {
           alt={data.title}
           width={1300}
           height={550}
+          priority={true}
           className='w-full h-auto rounded drop-shadow object-cover'
         />
         <div className='p-5'>

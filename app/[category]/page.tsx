@@ -3,6 +3,7 @@ import Footer from '@/components/organisms/Footer';
 import NavBar from '@/components/organisms/NavBar';
 import Card from '@/components/molecules/Card';
 import MainTitle from '@/components/atoms/MainTitle';
+
 import { getNews } from '../page';
 
 interface PageProps {
@@ -18,6 +19,21 @@ interface News {
   time: string;
   title: string;
   url: string;
+}
+
+interface Props {
+  params: { category: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export async function generateMetadata({ params }: Props) {
+  const capitalized =
+    params.category.charAt(0).toUpperCase() + params.category.slice(1, 10);
+  return {
+    title: `Vucar - ${capitalized}`,
+    description: `All news related to ${params.category}`,
+    keywords: `Vucar, Bài Viết, Blog, ${capitalized}`,
+  };
 }
 
 export default async function AllCategory({ params }: { params: PageProps }) {

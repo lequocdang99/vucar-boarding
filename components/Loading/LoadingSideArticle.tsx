@@ -1,5 +1,5 @@
-import LoadingAuthor from './LoadingAuthor';
 import LoadingTitle from './LoadingTitle';
+import LoadingAuthor from './LoadingAuthor';
 
 export default function LoadingSideArticle() {
   return (

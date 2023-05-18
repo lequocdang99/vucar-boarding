@@ -35,6 +35,7 @@ export default function MainArticle({
           alt={data.title}
           width={700}
           height={550}
+          priority={true}
           className='rounded drop-shadow object-contain hover:scale-105 transition ease-in-out duration-300 cursor-pointer'
         />
       </Link>

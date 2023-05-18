@@ -28,6 +28,7 @@ export default function SideArticle({
         alt={data.title}
         width={550}
         height={550}
+        priority={true}
         className='w-72 h-40 rounded drop-shadow object-cover hover:scale-105 transition ease-in-out duration-300 cursor-pointer'
       />
       <div className=''>

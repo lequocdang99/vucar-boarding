@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from '@/components/organisms/NavBar';
 import Footer from '@/components/organisms/Footer';
 import Head from '@/components/atoms/Head';

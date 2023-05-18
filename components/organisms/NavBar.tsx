@@ -13,6 +13,7 @@ export default function NavBar() {
             width={200}
             height={100}
             alt='Vucar logo'
+            priority={true}
             className='mx-auto w-auto h-auto'
           />
         </Link>
