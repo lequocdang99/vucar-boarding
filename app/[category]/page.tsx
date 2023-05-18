@@ -33,6 +33,13 @@ export async function generateMetadata({ params }: Props) {
     title: `Vucar - ${capitalized}`,
     description: `All news related to ${params.category}`,
     keywords: `Vucar, Bài Viết, Blog, ${capitalized}`,
+    openGraph: {
+      url: `https://vucar.vn/${params.category}`,
+      title: `Vucar | ${capitalized}`,
+      description: `Vucar Vietnam - ${capitalized}`,
+      image:
+        'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+    },
   };
 }
 
