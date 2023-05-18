@@ -16,7 +16,7 @@ export default function LoadingArticle() {
             <LoadingTitle />
           </div>
         </div>
-        <div className='w-full h-auto rounded bg-gray-300'></div>
+        <div className='w-full h-72 rounded bg-gray-300'></div>
         <div className='p-5'>
           <LoadingContent />
         </div>
