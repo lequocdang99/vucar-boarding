@@ -1,8 +1,10 @@
-import LoadingMainArticle from '@/components/Loading/LoadingMainArticle';
-import LoadingMainTitle from '@/components/Loading/LoadingMainTitle';
-import LoadingNavBar from '@/components/Loading/LoadingNavBar';
-import LoadingSideArticle from '@/components/Loading/LoadingSideArticle';
-import LoadingTitle from '@/components/Loading/LoadingTitle';
+import LoadingCategory from '@/components/loading/LoadingCategory';
+import LoadingFooter from '@/components/loading/LoadingFooter';
+import LoadingMainArticle from '@/components/loading/LoadingMainArticle';
+import LoadingMainTitle from '@/components/loading/LoadingMainTitle';
+import LoadingNavBar from '@/components/loading/LoadingNavBar';
+import LoadingSideArticle from '@/components/loading/LoadingSideArticle';
+import LoadingTitle from '@/components/loading/LoadingTitle';
 
 export default function Loading() {
   return (
@@ -19,8 +21,14 @@ export default function Loading() {
             <LoadingSideArticle />
           </div>
         </div>
+        <LoadingCategory />
+        <LoadingCategory />
+        <LoadingCategory />
+        <LoadingCategory />
+        <LoadingCategory />
+        <LoadingCategory />
       </div>
-      {/* <Footer /> */}
+      <LoadingFooter />
     </div>
   );
 }

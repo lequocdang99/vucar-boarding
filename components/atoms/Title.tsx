@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { slugify } from './Card';
+import { slugify } from '../molecules/Card';
 
 export default function Title({
   category,

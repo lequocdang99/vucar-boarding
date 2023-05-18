@@ -1,8 +1,9 @@
-import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
+import Footer from '@/components/organisms/Footer';
+import NavBar from '@/components/organisms/NavBar';
 import { getNews } from '@/app/page';
-import { slugify } from '@/components/Card';
-import Article from '@/components/Article';
+import { slugify } from '@/components/molecules/Card';
+import Article from '@/components/molecules/Article';
+import Loading from './loading';
 
 interface News {
   author: string;

@@ -1,6 +1,6 @@
+import LoadingTitle from './LoadingTitle';
 import LoadingAuthor from './LoadingAuthor';
 import LoadingContent from './LoadingContent';
-import LoadingTitle from './LoadingTitle';
 
 export default function LoadingMainArticle() {
   return (

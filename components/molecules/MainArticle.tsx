@@ -1,8 +1,8 @@
 import React from 'react';
-import Author from './Author';
-import Title from './Title';
+import Author from '../atoms/Author';
+import Title from '../atoms/Title';
 import Image from 'next/image';
-import Content from './Content';
+import Content from '../atoms/Content';
 import Link from 'next/link';
 import { slugify } from './Card';
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from '@/components/NavBar';
-import Footer from '@/components/Footer';
-import Head from '@/components/Head';
-import MainArticle from '@/components/MainArticle';
-import SideArticle from '@/components/SideArticle';
-import Category from '@/components/Category';
-import MainTitle from '@/components/MainTitle';
+import NavBar from '@/components/organisms/NavBar';
+import Footer from '@/components/organisms/Footer';
+import Head from '@/components/atoms/Head';
+import MainArticle from '@/components/molecules/MainArticle';
+import SideArticle from '@/components/molecules/SideArticle';
+import Category from '@/components/organisms/Category';
+import MainTitle from '@/components/atoms/MainTitle';
 
 export async function getNews(category: string) {
   const res = await fetch(

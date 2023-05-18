@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import MainTitle from './MainTitle';
-import Author from './Author';
-import FullContent from './FullContent';
-import Timestamp from './Timestamp';
+import MainTitle from '../atoms/MainTitle';
+import Author from '../atoms/Author';
+import FullContent from '../atoms/FullContent';
+import Timestamp from '../atoms/Timestamp';
 
 interface News {
   author: string;

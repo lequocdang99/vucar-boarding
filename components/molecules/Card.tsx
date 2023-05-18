@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Title from './Title';
-import Author from './Author';
-import Content from './Content';
+import Title from '../atoms/Title';
+import Author from '../atoms/Author';
+import Content from '../atoms/Content';
 import Link from 'next/link';
 
 interface News {
@@ -45,6 +45,7 @@ export default function Card({
           alt={item.title}
           width={400}
           height={400}
+          priority={true}
           className='w-full h-72 rounded-t-lg drop-shadow object-cover'
         />
       </Link>

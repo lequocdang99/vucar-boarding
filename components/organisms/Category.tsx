@@ -1,7 +1,7 @@
 import React from 'react';
-import Head from './Head';
-import All from './All';
-import Card from './Card';
+import Head from '../atoms/Head';
+import All from '../atoms/All';
+import Card from '../molecules/Card';
 import { getNews } from '@/app/page';
 
 interface News {

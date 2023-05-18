@@ -22,20 +22,22 @@ export default function Footer() {
             gian của các bên giao dịch.
           </p>
         </div>
-        <div className='grid grid-cols-1'>
+        <div>
           <h6 className='text-xl sm:py-4 md:pb-4'>DỊCH VỤ</h6>
-          <Link
-            className='text-sm pb-3 hover:underline'
-            href='/'
-          >
-            Mua Xe
-          </Link>
-          <Link
-            className='text-sm pb-3 hover:underline'
-            href='/'
-          >
-            Tư Vấn Chọn Xe
-          </Link>
+          <div className='flex flex-col'>
+            <Link
+              className='text-sm pb-3 hover:underline'
+              href='/'
+            >
+              Mua Xe
+            </Link>
+            <Link
+              className='text-sm pb-3 hover:underline'
+              href='/'
+            >
+              Tư Vấn Chọn Xe
+            </Link>
+          </div>
         </div>
         <div className='grid grid-cols-1'>
           <h6 className='text-xl sm:py-4 md:pb-4'>LIÊN HỆ VỚI CHÚNG TÔI</h6>

@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
-import Card from '@/components/Card';
-import MainTitle from '@/components/MainTitle';
+import Footer from '@/components/organisms/Footer';
+import NavBar from '@/components/organisms/NavBar';
+import Card from '@/components/molecules/Card';
+import MainTitle from '@/components/atoms/MainTitle';
 import { getNews } from '../page';
 
 interface PageProps {

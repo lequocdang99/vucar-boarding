@@ -1,6 +1,6 @@
 import React from 'react';
-import Title from './Title';
-import Author from './Author';
+import Title from '../atoms/Title';
+import Author from '../atoms/Author';
 import Image from 'next/image';
 
 interface News {
