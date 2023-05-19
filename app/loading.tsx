@@ -1,10 +1,10 @@
-import LoadingCategory from '@/components/loading/LoadingCategory';
-import LoadingFooter from '@/components/loading/LoadingFooter';
-import LoadingMainArticle from '@/components/loading/LoadingMainArticle';
-import LoadingMainTitle from '@/components/loading/LoadingMainTitle';
-import LoadingNavBar from '@/components/loading/LoadingNavBar';
-import LoadingSideArticle from '@/components/loading/LoadingSideArticle';
-import LoadingTitle from '@/components/loading/LoadingTitle';
+import LoadingTitle from '@/components/Loading/LoadingTitle';
+import LoadingNavBar from '@/components/Loading/LoadingNavBar';
+import LoadingFooter from '@/components/Loading/LoadingFooter';
+import LoadingCategory from '@/components/Loading/LoadingCategory';
+import LoadingMainTitle from '@/components/Loading/LoadingMainTitle';
+import LoadingMainArticle from '@/components/Loading/LoadingMainArticle';
+import LoadingSideArticle from '@/components/Loading/LoadingSideArticle';
 
 export default function Loading() {
   return (

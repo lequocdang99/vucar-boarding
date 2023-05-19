@@ -1,6 +1,6 @@
-import LoadingArticle from '@/components/loading/LoadingArticle';
-import LoadingFooter from '@/components/loading/LoadingFooter';
-import LoadingNavBar from '@/components/loading/LoadingNavBar';
+import LoadingArticle from '@/components/Loading/LoadingArticle';
+import LoadingFooter from '@/components/Loading/LoadingFooter';
+import LoadingNavBar from '@/components/Loading/LoadingNavBar';
 
 export default function Loading() {
   return (

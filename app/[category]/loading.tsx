@@ -1,7 +1,7 @@
-import LoadingCard from '@/components/loading/LoadingCard';
-import LoadingFooter from '@/components/loading/LoadingFooter';
-import LoadingMainTitle from '@/components/loading/LoadingMainTitle';
-import LoadingNavBar from '@/components/loading/LoadingNavBar';
+import LoadingCard from '@/components/Loading/LoadingCard';
+import LoadingFooter from '@/components/Loading/LoadingFooter';
+import LoadingMainTitle from '@/components/Loading/LoadingMainTitle';
+import LoadingNavBar from '@/components/Loading/LoadingNavBar';
 
 export default function Loading() {
   return (

@@ -1,5 +1,5 @@
-import LoadingAuthor from './LoadingAuthor';
 import LoadingButton from './LoadingButton';
+import LoadingAuthor from './LoadingAuthor';
 
 export default function LoadingNavBar() {
   return (
