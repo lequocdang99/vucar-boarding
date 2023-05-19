@@ -50,7 +50,7 @@ export default async function AllCategory({ params }: { params: PageProps }) {
       <NavBar />
       <div className='mx-10 mb-10'>
         <MainTitle title={params.category} />
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
           {data?.map((item: News) => (
             <Card
               item={item}
