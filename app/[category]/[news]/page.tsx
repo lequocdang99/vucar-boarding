@@ -1,32 +1,15 @@
 import Footer from '@/components/organisms/Footer';
 import NavBar from '@/components/organisms/NavBar';
 import Article from '@/components/molecules/Article';
+import { Metadata } from 'next';
 
+import { News } from '@/types/types';
 import { getNews } from '@/app/page';
+import { Props } from '@/types/types';
+import { PageProps } from '@/types/types';
 import { slugify } from '@/components/molecules/Card';
 
-interface News {
-  author: string;
-  content: string;
-  date: string;
-  imageUrl: string;
-  readMoreUrl: string;
-  time: string;
-  title: string;
-  url: string;
-}
-
-interface PageProps {
-  category: string;
-  news: string;
-}
-
-interface Props {
-  params: { category: string; news: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const unslugified = params.news
     .replace(/\-/g, ' ')
     .replace(
@@ -41,15 +24,16 @@ export async function generateMetadata({ params }: Props) {
       url: `https://vucar.vn/${params.category}/${params.news}`,
       title: `Vucar | ${unslugified}`,
       description: `Vucar Vietnam - ${unslugified}`,
-      image:
-        'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+      images: {
+        url: 'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+      },
     },
   };
 }
 
 export default async function News({ params }: { params: PageProps }) {
   const data = await getNews(params.category);
-  const article = await data.data.filter(
+  const article = data.data.filter(
     (e: News) => slugify(e.title) === params.news
   );
   return (

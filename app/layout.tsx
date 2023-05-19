@@ -1,9 +1,10 @@
 import './globals.css';
+import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Vucar | Nền tảng mua bán ô tô cũ ứng dụng AI',
   description:
     'Vucar Vietnam - Kênh mua bán ô tô cũ, giá tốt, sử dụng công nghệ AI tiên tiến. Mang lại trải nghiệm an toàn, minh bạch và đáng tin cậy trong quá trình mua bán xe.',
@@ -14,8 +15,9 @@ export const metadata = {
     title: 'Vucar | Nền tảng mua bán ô tô cũ ứng dụng AI',
     description:
       'Vucar Vietnam - Kênh mua bán ô tô cũ, giá tốt, sử dụng công nghệ AI tiên tiến. Mang lại trải nghiệm an toàn, minh bạch và đáng tin cậy trong quá trình mua bán xe.',
-    image:
-      'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+    images: {
+      url: 'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+    },
   },
 };
 

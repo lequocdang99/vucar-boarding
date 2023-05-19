@@ -4,28 +4,13 @@ import Card from '@/components/molecules/Card';
 import MainTitle from '@/components/atoms/MainTitle';
 
 import { getNews } from '../page';
+import { Metadata } from 'next';
 
-interface PageProps {
-  category: string;
-}
+import { News } from '@/types/types';
+import { Props } from '@/types/types';
+import { PageProps } from '@/types/types';
 
-interface News {
-  author: string;
-  content: string;
-  date: string;
-  imageUrl: string;
-  readMoreUrl: string;
-  time: string;
-  title: string;
-  url: string;
-}
-
-interface Props {
-  params: { category: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const capitalized =
     params.category.charAt(0).toUpperCase() + params.category.slice(1, 10);
   return {
@@ -36,14 +21,15 @@ export async function generateMetadata({ params }: Props) {
       url: `https://vucar.vn/${params.category}`,
       title: `Vucar | ${capitalized}`,
       description: `Vucar Vietnam - ${capitalized}`,
-      image:
-        'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+      images: {
+        url: 'https://storage.googleapis.com/vucar-user-assets/public-assets/vucar-logo.webp',
+      },
     },
   };
 }
 
 export default async function AllCategory({ params }: { params: PageProps }) {
-  const { cat, data, success } = await getNews(params.category);
+  const { category, data, success } = await getNews(params.category);
 
   return (
     <div className='bg-white'>
