@@ -1,28 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import Title from '../atoms/Title';
 import Author from '../atoms/Author';
 import Content from '../atoms/Content';
-import Link from 'next/link';
 
-interface News {
-  author: string;
-  content: string;
-  date: string;
-  imageUrl: string;
-  readMoreUrl: string;
-  time: string;
-  title: string;
-  url: string;
-}
+import { News } from '@/types/types';
 
-export const slugify = (str: string) => {
-  return str
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s_-]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-};
+import { slugify } from '@/utils/slugify';
 
 export default function Card({
   item,

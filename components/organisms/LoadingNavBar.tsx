@@ -1,4 +1,4 @@
-import LoadingButton from './LoadingButton';
+import LoadingButton from '../atoms/LoadingButton';
 
 export default function LoadingNavBar() {
   return (

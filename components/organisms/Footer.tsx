@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+
 import { faHome, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookSquare,

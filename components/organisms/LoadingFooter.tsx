@@ -1,5 +1,5 @@
-import LoadingTitle from './LoadingTitle';
-import LoadingContent from './LoadingContent';
+import LoadingTitle from '../atoms/LoadingTitle';
+import LoadingContent from '../atoms/LoadingContent';
 
 export default function LoadingFooter() {
   return (

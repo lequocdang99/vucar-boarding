@@ -1,14 +1,15 @@
-import Footer from '@/components/organisms/Footer';
-import NavBar from '@/components/organisms/NavBar';
-import Card from '@/components/molecules/Card';
-import MainTitle from '@/components/atoms/MainTitle';
-
-import { getNews } from '../page';
 import { Metadata } from 'next';
+
+import Card from '@/components/molecules/Card';
+import NavBar from '@/components/organisms/NavBar';
+import Footer from '@/components/organisms/Footer';
+import MainTitle from '@/components/atoms/MainTitle';
 
 import { News } from '@/types/types';
 import { Props } from '@/types/types';
 import { PageProps } from '@/types/types';
+
+import { getNews } from '@/utils/getNews';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const capitalized =

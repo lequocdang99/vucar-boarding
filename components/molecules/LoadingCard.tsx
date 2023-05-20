@@ -1,6 +1,6 @@
-import LoadingTitle from './LoadingTitle';
-import LoadingAuthor from './LoadingAuthor';
-import LoadingContent from './LoadingContent';
+import LoadingTitle from '../atoms/LoadingTitle';
+import LoadingAuthor from '../atoms/LoadingAuthor';
+import LoadingContent from '../atoms/LoadingContent';
 
 export default function LoadingCard() {
   return (

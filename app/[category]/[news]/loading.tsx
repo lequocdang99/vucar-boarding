@@ -1,6 +1,6 @@
-import LoadingArticle from '@/components/Loading/LoadingArticle';
-import LoadingFooter from '@/components/Loading/LoadingFooter';
-import LoadingNavBar from '@/components/Loading/LoadingNavBar';
+import LoadingArticle from '@/components/molecules/LoadingArticle';
+import LoadingFooter from '@/components/organisms/LoadingFooter';
+import LoadingNavBar from '@/components/organisms/LoadingNavBar';
 
 export default function Loading() {
   return (

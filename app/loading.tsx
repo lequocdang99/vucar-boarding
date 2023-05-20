@@ -1,10 +1,10 @@
-import LoadingTitle from '@/components/Loading/LoadingTitle';
-import LoadingNavBar from '@/components/Loading/LoadingNavBar';
-import LoadingFooter from '@/components/Loading/LoadingFooter';
-import LoadingCategory from '@/components/Loading/LoadingCategory';
-import LoadingMainTitle from '@/components/Loading/LoadingMainTitle';
-import LoadingMainArticle from '@/components/Loading/LoadingMainArticle';
-import LoadingSideArticle from '@/components/Loading/LoadingSideArticle';
+import LoadingTitle from '@/components/atoms/LoadingTitle';
+import LoadingNavBar from '@/components/organisms/LoadingNavBar';
+import LoadingFooter from '@/components/organisms/LoadingFooter';
+import LoadingCategory from '@/components/organisms/LoadingCategory';
+import LoadingMainTitle from '@/components/atoms/LoadingMainTitle';
+import LoadingMainArticle from '@/components/molecules/LoadingMainArticle';
+import LoadingSideArticle from '@/components/molecules/LoadingSideArticle';
 
 export default function Loading() {
   return (

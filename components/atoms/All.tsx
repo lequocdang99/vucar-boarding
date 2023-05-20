@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 
 export default function All({ title, url }: { title: string; url: string }) {
   return (

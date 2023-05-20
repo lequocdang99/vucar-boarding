@@ -1,9 +1,10 @@
-import React from 'react';
 import Head from '../atoms/Head';
 import All from '../atoms/All';
 import Card from '../molecules/Card';
-import { getNews } from '@/app/page';
+
 import { News } from '@/types/types';
+
+import { getNews } from '@/utils/getNews';
 
 export default async function Category({ category }: { category: string }) {
   const data = await getNews(category);

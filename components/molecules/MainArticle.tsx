@@ -1,21 +1,13 @@
-import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
 import Author from '../atoms/Author';
 import Title from '../atoms/Title';
-import Image from 'next/image';
 import Content from '../atoms/Content';
-import Link from 'next/link';
-import { slugify } from './Card';
 
-interface News {
-  author: string;
-  content: string;
-  date: string;
-  imageUrl: string;
-  readMoreUrl: string;
-  time: string;
-  title: string;
-  url: string;
-}
+import { News } from '@/types/types';
+
+import { slugify } from '@/utils/slugify';
 
 export default function MainArticle({
   category,

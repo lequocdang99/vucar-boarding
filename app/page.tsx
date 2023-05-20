@@ -1,20 +1,12 @@
+import Head from '@/components/atoms/Head';
 import NavBar from '@/components/organisms/NavBar';
 import Footer from '@/components/organisms/Footer';
-import Head from '@/components/atoms/Head';
+import MainTitle from '@/components/atoms/MainTitle';
+import Category from '@/components/organisms/Category';
 import MainArticle from '@/components/molecules/MainArticle';
 import SideArticle from '@/components/molecules/SideArticle';
-import Category from '@/components/organisms/Category';
-import MainTitle from '@/components/atoms/MainTitle';
 
-import { GetNewResponse } from '@/types/types';
-
-export async function getNews(category: string): Promise<GetNewResponse> {
-  const res = await fetch(
-    `https://inshorts.deta.dev/news?category=${category}`
-  );
-  const json: GetNewResponse = await res.json();
-  return json as GetNewResponse;
-}
+import { getNews } from '@/utils/getNews';
 
 export default async function Main() {
   const { category, data } = await getNews('automobile');

@@ -1,5 +1,5 @@
-import LoadingTitle from './LoadingTitle';
-import LoadingAuthor from './LoadingAuthor';
+import LoadingTitle from '../atoms/LoadingTitle';
+import LoadingAuthor from '../atoms/LoadingAuthor';
 
 export default function LoadingSideArticle() {
   return (

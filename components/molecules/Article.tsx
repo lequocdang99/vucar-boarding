@@ -5,16 +5,7 @@ import Author from '../atoms/Author';
 import FullContent from '../atoms/FullContent';
 import Timestamp from '../atoms/Timestamp';
 
-interface News {
-  author: string;
-  content: string;
-  date: string;
-  imageUrl: string;
-  readMoreUrl: string;
-  time: string;
-  title: string;
-  url: string;
-}
+import { News } from '@/types/types';
 
 export default function Article({ data }: { data: News }) {
   return (

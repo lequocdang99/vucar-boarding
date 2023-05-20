@@ -1,5 +1,5 @@
-import LoadingCard from './LoadingCard';
-import LoadingTitle from './LoadingTitle';
+import LoadingTitle from '../atoms/LoadingTitle';
+import LoadingCard from '../molecules/LoadingCard';
 
 export default function LoadingCategory() {
   return (

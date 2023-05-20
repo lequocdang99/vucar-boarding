@@ -1,7 +1,7 @@
-import LoadingCard from '@/components/Loading/LoadingCard';
-import LoadingFooter from '@/components/Loading/LoadingFooter';
-import LoadingMainTitle from '@/components/Loading/LoadingMainTitle';
-import LoadingNavBar from '@/components/Loading/LoadingNavBar';
+import LoadingCard from '@/components/molecules/LoadingCard';
+import LoadingFooter from '@/components/organisms/LoadingFooter';
+import LoadingMainTitle from '@/components/atoms/LoadingMainTitle';
+import LoadingNavBar from '@/components/organisms/LoadingNavBar';
 
 export default function Loading() {
   return (

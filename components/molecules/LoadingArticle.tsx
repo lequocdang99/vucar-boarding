@@ -1,7 +1,7 @@
-import LoadingTitle from './LoadingTitle';
-import LoadingAuthor from './LoadingAuthor';
-import LoadingContent from './LoadingContent';
-import LoadingMainTitle from './LoadingMainTitle';
+import LoadingTitle from '../atoms/LoadingTitle';
+import LoadingAuthor from '../atoms/LoadingAuthor';
+import LoadingContent from '../atoms/LoadingContent';
+import LoadingMainTitle from '../atoms/LoadingMainTitle';
 
 export default function LoadingArticle() {
   return (
