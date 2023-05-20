@@ -8,6 +8,7 @@ import { getNews } from '@/app/page';
 import { Props } from '@/types/types';
 import { PageProps } from '@/types/types';
 import { slugify } from '@/components/molecules/Card';
+import LoadingArticle from '@/components/Loading/LoadingArticle';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const unslugified = params.news
@@ -39,7 +40,7 @@ export default async function News({ params }: { params: PageProps }) {
   return (
     <div>
       <NavBar />
-      <Article data={article[0]} />
+      {article.length > 0 ? <Article data={article[0]} /> : <LoadingArticle />}
       <Footer />
     </div>
   );
