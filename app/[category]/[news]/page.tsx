@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       (text) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase()
     );
   return {
-    title: `${unslugified}`,
-    description: `${unslugified}`,
+    title: unslugified,
+    description: unslugified,
     keywords: `Vucar, Bài Viết, Blog, ${unslugified}`,
     openGraph: {
       url: `https://vucar.vn/${params.category}/${params.news}`,
@@ -33,9 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function News({ params }: { params: PageProps }) {
   const data = await getNews(params.category);
-  const article = data.data.filter(
-    (e: News) => slugify(e.title) === params.news
-  );
+  const article = data.data.filter((e: News) => {
+    return slugify(e.title) === params.news;
+  });
   return (
     <div>
       <NavBar />

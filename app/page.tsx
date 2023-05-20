@@ -7,22 +7,17 @@ import Category from '@/components/organisms/Category';
 import MainTitle from '@/components/atoms/MainTitle';
 
 import { GetNewResponse } from '@/types/types';
-import { notFound } from 'next/navigation';
 
 export async function getNews(category: string): Promise<GetNewResponse> {
   const res = await fetch(
     `https://inshorts.deta.dev/news?category=${category}`
   );
   const json: GetNewResponse = await res.json();
-  if (!json) {
-    notFound();
-  } else {
-    return json as GetNewResponse;
-  }
+  return json as GetNewResponse;
 }
 
 export default async function Main() {
-  const { category, data } = await getNews('all');
+  const { category, data } = await getNews('automobile');
   const randomArticle = data[Math.floor(Math.random() * data.length)];
 
   return (

@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AllCategory({ params }: { params: PageProps }) {
   const { category, data, success } = await getNews(params.category);
+  console.log(params);
 
   return (
     <div className='bg-white'>
